@@ -1,24 +1,23 @@
 import { DefaultSeo } from 'next-seo'
 
 const config = {
-  title: 'Nicky Lao - Frontend Developer & Designer',
-  description:
-    '自驱型前端工程师，9年多大型复杂产品开发经验，4年前端团队管理经验，熟悉跨端APP 如 Ionic、React Native开发，熟悉 微前端、DevOps 等，具备全栈开发能力。',
+  title: '克喵爱吃卤面 - a common college student',
+  description: '总有些事情高于其他！',
   openGraph: {
     type: 'website',
     locale: 'zh_CN',
-    url: 'https://www.giscafer.com',
-    site_name: 'giscafer | Nicky Lao',
+    url: 'https://www.kemiaofx.cn',
+    site_name: '喵落阁 | 克喵爱吃卤面',
     images: [
       {
-        url: 'https://giscafer.com/avatar.png',
-        alt: 'Nicky Lao',
+        url: 'https://weavatar.com/avatar/7614B285E795F21E780247019C4E15C4',
+        alt: '克喵爱吃卤面',
       },
     ],
   },
   twitter: {
-    handle: '@giscafer',
-    site: '@giscafer',
+    handle: '@kemiaosw',
+    site: '@kemiaosw',
     cardType: 'summary_large_image',
   },
 }

@@ -6,9 +6,9 @@ const matter = require('gray-matter')
 
 async function generate() {
   const feed = new RSS({
-    title: 'Nicky Lao',
-    site_url: 'https://giscafer.com',
-    feed_url: 'https://giscafer.com/feed.xml',
+    title: '克喵爱吃卤面',
+    site_url: 'https://www.kemiaofx.cn',
+    feed_url: 'https://www.kemiaofx.cn/feed.xml',
   })
 
   const posts = await fs.readdir(path.join(__dirname, '..', 'data', 'blog'))

@@ -32,8 +32,8 @@ const Blog = ({ posts, tagList }: BlogProps): JSX.Element => {
     debounce((value: string) => gtag.search(value), 500),
     [],
   )
-  const seoTitle = 'Blog | Nicky Lao'
-  const seoDesc = '关于大前端的技术文章，包含且不限于 React、Angular、React Native 等。'
+  const seoTitle = 'Blog | 克喵爱吃卤面'
+  const seoDesc = '记录克喵的生活、资源分享、踩坑记录等。'
   const filteredPosts = posts
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .filter(({ title, summary, tags }) => {
@@ -56,9 +56,9 @@ const Blog = ({ posts, tagList }: BlogProps): JSX.Element => {
         description={seoDesc}
         openGraph={{
           title: seoTitle,
-          url: `https://giscafer.com/blog/`,
+          url: `https://www.kemiaofx.cn/blog/`,
           description: seoDesc,
-          site_name: 'giscafer | Nicky Lao',
+          site_name: '喵落阁 | 克喵爱吃卤面',
         }}
         twitter={{
           cardType: 'summary_large_image',

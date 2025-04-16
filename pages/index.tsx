@@ -49,7 +49,7 @@ export async function getStaticProps() {
   }
 }
 
-const headerTitle = '你好，我叫 Nicky ！'
+const headerTitle = '你好，我叫 克喵爱吃卤面 ！'
 
 const headerDescription = '本站内容使用 Next.js + Github Issues 自动化发布'
 

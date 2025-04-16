@@ -1,0 +1,10 @@
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - contentlayer
+  - deasync
+  - esbuild
+  - faunadb
+  - nodejieba
+  - protobufjs
+  - simple-git-hooks
+  - yarn

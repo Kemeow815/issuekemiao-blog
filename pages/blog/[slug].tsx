@@ -93,9 +93,9 @@ const Post = ({ post, related, githubUser, githubProject }: PostProps): JSX.Elem
       })
     : null
 
-  const seoTitle = `${post.title} | Nicky Lao`
+  const seoTitle = `${post.title} | 克喵爱吃卤面`
   const seoDesc = `${post.summary}`
-  const url = `https://giscafer.com/blog/${post.slug}`
+  const url = `https://www.kemiaofx.cn/blog/${post.slug}`
 
   return (
     <Page>
@@ -110,19 +110,19 @@ const Post = ({ post, related, githubUser, githubProject }: PostProps): JSX.Elem
           images: [
             {
               url: post.og
-                ? `https://giscafer.com${post.og}`
+                ? `https://www.kemiaofx.cn${post.og}`
                 : `https://og-image.giscafer.vercel.app/${encodeURIComponent(post.title)}?desc=${encodeURIComponent(
                     seoDesc,
                   )}&theme=dark.png`,
               alt: post.title,
             },
           ],
-          site_name: 'giscafer | Nicky Lao',
+          site_name: '喵落阁 | 克喵爱吃卤面',
           type: 'article',
           article: {
             publishedTime: post.publishedAt,
             modifiedTime: post.updatedAt,
-            authors: ['https://giscafer.com'],
+            authors: ['https://www.kemiaofx.cn'],
           },
         }}
         twitter={{
@@ -169,7 +169,7 @@ const Post = ({ post, related, githubUser, githubProject }: PostProps): JSX.Elem
         mapping="specific"
         term={seoTitle}
         reactionsEnabled="1"
-        emitMetadata="0"
+        emitMetadata="1"
         inputPosition="top"
         theme={theme === 'system' ? 'preferred_color_scheme' : theme}
         lang="zh-CN"
