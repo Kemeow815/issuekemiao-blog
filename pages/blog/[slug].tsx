@@ -163,10 +163,10 @@ const Post = ({ post, related, githubUser, githubProject }: PostProps): JSX.Elem
       <Giscus
         id="comments"
         repo={`${githubUser}/${githubProject}`}
-        repoId="MDEwOlJlcG9zaXRvcnk2MjYyOTkxOQ=="
-        category="General"
-        categoryId="DIC_kwDOA7uoH84CV9v8"
-        mapping="specific"
+        repoId="R_kgDOOajaTQ"
+        category="Announcements"
+        categoryId="DIC_kwDOOajaTc4CpJ8Z"
+        mapping="title"
         term={seoTitle}
         reactionsEnabled="1"
         emitMetadata="1"
