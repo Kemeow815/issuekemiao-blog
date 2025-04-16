@@ -9,7 +9,7 @@ const links = [
   { name: '首页', path: '/' },
   { name: '关于', path: '/about' },
   { name: '博客', path: '/blog' },
-  // { name: '音乐', path: 'https://music.kemiao.online', target: '_blank' },
+  { name: '音乐', path: 'https://music.kemiao.online', target: '_blank' },
   // { name: '说说', path: 'https://shuoshuo.kemiao.online' },
 ]
 
@@ -27,16 +27,16 @@ const Header = (): JSX.Element => {
           </Link>
           <nav className={styles.nav}>
             <ol className={styles.links}>
-              {links.map(({ name, path, target }) => {
-                if (target === '_blank') {
-                  return (
-                    <li key={path} className={pathname === path ? styles.linkActive : styles.link}>
-                      <a href={path} target="_blank" rel="noopener noreferrer">
-                        {name}
-                      </a>
-                    </li>
-                  )
-                }
+              {links.map(({ name, path }) => {
+                // if (target === '_blank') {
+                //   return (
+                //     <li key={path} className={pathname === path ? styles.linkActive : styles.link}>
+                //       <a href={path} target="_blank" rel="noopener noreferrer">
+                //         {name}
+                //       </a>
+                //     </li>
+                //   )
+                // }
                 return (
                   <li key={path} className={pathname === path ? styles.linkActive : styles.link}>
                     <Link href={path}>
