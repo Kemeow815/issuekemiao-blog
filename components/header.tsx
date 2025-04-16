@@ -9,8 +9,8 @@ const links = [
   { name: '首页', path: '/' },
   { name: '关于', path: '/about' },
   { name: '博客', path: '/blog' },
-  { name: '音乐', path: 'https://music.kemiao.online', target: '_blank' },
-  { name: '说说', path: 'https://shuoshuo.kemiao.online' },
+  // { name: '音乐', path: 'https://music.kemiao.online', target: '_blank' },
+  // { name: '说说', path: 'https://shuoshuo.kemiao.online' },
 ]
 
 const Header = (): JSX.Element => {
